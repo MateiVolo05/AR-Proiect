@@ -1,7 +1,8 @@
+import Nav from "../components/Navbar";
 
 
 export default function Home() {
   return (
-    <h1>dd</h1>
+    <Nav>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Nav>
   )
 }
