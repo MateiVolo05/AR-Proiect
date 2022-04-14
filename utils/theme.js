@@ -1,5 +1,11 @@
 import { extendTheme } from '@chakra-ui/react';
 
+/* #FF5858-orange 1
+   #F09819-orange 2
+   #0F9BF6-blue 1
+   #1823AB-blue 2
+*/
+
 const colors = {};
 const components = {
   Container: {
