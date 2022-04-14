@@ -1,8 +1,10 @@
-import Nav from "../components/Navbar";
-
+import { Box } from "@chakra-ui/react";
+import Nav from "../components/Navbar"
 
 export default function Home() {
   return (
-    <Nav>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Nav>
+    <Nav title="A&R Proiect">
+      
+    </Nav>
   )
 }

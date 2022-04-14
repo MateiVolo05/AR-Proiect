@@ -1,9 +1,12 @@
 import { extendTheme } from '@chakra-ui/react';
 
-/* #FF5858-orange 1
+/* COLOR SCHEME
+   #FF5858-orange 1
    #F09819-orange 2
    #0F9BF6-blue 1
    #1823AB-blue 2
+   #2b2d2e-black
+   #ebf0f2-white
 */
 
 const colors = {};
