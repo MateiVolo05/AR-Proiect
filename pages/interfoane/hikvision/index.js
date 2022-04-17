@@ -1,4 +1,4 @@
-import Nav from "../../components/Navbar"
+import Nav from "../../../components/Navbar"
 
 
 export default function Hikvision(){
