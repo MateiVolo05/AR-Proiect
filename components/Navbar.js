@@ -1,4 +1,4 @@
-import { HamburgerIcon, Icon, MoonIcon, SunIcon, PhoneIcon, SettingsIcon, ArrowForwardIcon, ArrowDownIcon} from "@chakra-ui/icons";
+import { HamburgerIcon, Icon, MoonIcon, SunIcon, ChatIcon, SettingsIcon, ArrowForwardIcon, ArrowDownIcon} from "@chakra-ui/icons";
 import { Box, Button, HStack, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, useColorModeValue, VStack, Stack, useColorMode, DrawerFooter, Text, Switch, Grid, GridItem, DrawerHeader} from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
@@ -59,7 +59,7 @@ function Navbar(){
                     <Box>
                         <MenuItem href="/contact">
                             <Button bgGradient={`linear(to-br, ${revcolor1}, ${revcolor2})`} color={colormode} fontSize={["sm",, "xl"]} borderStyle="outline" borderWidth="2px" borderColor="#2b2d2e" _hover={{"bg":revcolor1}}>
-                                <Icon as={PhoneIcon} mr={1} color={colormode}/>Contact
+                                <Icon as={ChatIcon} mr={1} color={colormode}/>Contact
                             </Button>
                         </MenuItem>
                     </Box>
@@ -152,7 +152,7 @@ export default function Nav({title, children}){
         <Box minH="50px">
             <Head>
                 {title && <title>{title}</title>}
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <link rel="icon" href="/icon.png" /> 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Interfoane, cartele de acces, sisteme de control acces, supraveghere si de alarma in Piatra Neamt" />

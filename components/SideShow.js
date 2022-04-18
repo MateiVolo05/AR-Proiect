@@ -8,7 +8,7 @@ import {BsDot} from 'react-icons/bs'
 function SlideShow(props){
   const color=useColorModeValue("blue.1",'orange.2')
   const Props = {
-    duration: 5000,
+    duration: 2000,
     transitionDuration: 500,
     infinite: true,
     indicators: true,

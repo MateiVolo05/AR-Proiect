@@ -7,6 +7,8 @@
    #ebf0f2-white
    #FA6E42-orange 3
    #000430-dark blue
+   #c2bfb6-light grey
+   #6e6a60-dark grey
 */
 
 import { extendTheme } from '@chakra-ui/react';
@@ -25,6 +27,10 @@ const colors = {
   blackWhite:{
     "black":"#2b2d2e",
     "white":"#ebf0f2"
+  },
+  grey:{
+    light:"#c2bfb6",
+    dark:"#6e6a60"
   }
 };
 const components = {
