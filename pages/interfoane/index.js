@@ -1,5 +1,5 @@
 import { Center, Box, Heading, useColorMode, useColorModeValue, Stack, Text, ListIcon, ListItem, List, Button } from "@chakra-ui/react"
-import {ArrowRightIcon} from "@chakra-ui/icons"
+import {ArrowForwardIcon} from "@chakra-ui/icons"
 import Link from "next/link"
 import Image from "next/image";
 import Nav from "../../components/Navbar"
@@ -25,34 +25,34 @@ export default function Interfoane(){
                     <Text pl={4} pt={4} fontSize={['md',, '3xl']}>Bloc</Text>
                     <List pl={8} fontSize={['sm',, '2xl']}>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/bloc/pass-digital"><Button variant="link" fontSize={['sm',, '2xl']}>Gama Pass Digital</Button></Link>
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/bloc/touch-line"><Button variant="link" fontSize={['sm',, '2xl']}>Gama Touch Line</Button></Link>
                         </ListItem>
                     </List>
                     <Text pl={4} pt={4} fontSize={['md',, '3xl']}>Vila</Text>
                     <List pl={8} fontSize={['sm',, '2xl']}>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/vila/1-familie"><Button variant="link" fontSize={['sm',, '2xl']}>1 Familie</Button></Link>
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/vila/2-familii"><Button variant="link" fontSize={['sm',, '2xl']}>2 Familii</Button></Link>
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/vila/3-familii"><Button variant="link" fontSize={['sm',, '2xl']}>3 Familii</Button></Link>
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/vila/5-familii"><Button variant="link" fontSize={['sm',, '2xl']}>5 Familii</Button></Link>
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={ArrowRightIcon} color={color1} />
+                            <ListIcon as={ArrowForwardIcon} color={color1} />
                             <Link href="/interfoane/electra/vila/8-familii"><Button variant="link" fontSize={['sm',, '2xl']}>8 Familii</Button></Link>
                         </ListItem>
                     </List>
