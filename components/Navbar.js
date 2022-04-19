@@ -156,7 +156,7 @@ export default function Nav({title, children}){
                 <link rel="icon" href="/icon.png" /> 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Interfoane, cartele de acces, sisteme de control acces, supraveghere si de alarma in Piatra Neamt" />
-                <meta name="keywords" content="interfoane, piatra neamt, cartele, supraveghere, alarma, control acces, securitate" />
+                <meta name="keywords" content="ar proiect, interfoane, piatra neamt, cartele, supraveghere, alarma, control acces, securitate" />
             </Head>
             <VStack align="stretch" justifyContent="space-between" spacing={8}>
                 <Navbar />
