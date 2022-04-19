@@ -7,7 +7,7 @@
    #ebf0f2-white
    #FA6E42-orange 3
    #000430-dark blue
-   #c2bfb6-light grey
+   #d1ccbe-light grey
    #6e6a60-dark grey
 */
 
@@ -29,7 +29,7 @@ const colors = {
     "white":"#ebf0f2"
   },
   grey:{
-    light:"#c2bfb6",
+    light:"#d1ccbe",
     dark:"#6e6a60"
   }
 };

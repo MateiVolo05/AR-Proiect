@@ -1,8 +1,8 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Nav from "../../../../components/Navbar";
+import Nav from "../../../../../components/Navbar";
 import Image from 'next/image'
-import terminal from "../../../../public/terminal-pass-digital.png"
+import terminal from "../../../../../public/terminal-pass-digital.png"
 
 export default function Terminal(){
     const color1=useColorModeValue("blue.1", "orange.1")
