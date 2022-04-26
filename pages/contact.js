@@ -1,4 +1,4 @@
-import { Box, Button, Input, Textarea, useColorModeValue, FormControl, FormLabel, Icon } from "@chakra-ui/react";
+import { Box, Button, Input, Textarea, useColorModeValue, FormControl, FormLabel, Icon, Text } from "@chakra-ui/react";
 import emailjs  from "emailjs-com";
 import React, { useState } from 'react';
 import Nav from '../components/Navbar'
@@ -14,7 +14,6 @@ export default function Contact(){
               console.log(error.text);
             });
         setSend(true)
-        e.target.reset()
     }
     const [send, setSend]=useState(false)
     const color1=useColorModeValue("blue.1", "orange.1")
@@ -44,11 +43,14 @@ export default function Contact(){
                     </FormControl>
                     {   
                         send===false ? 
-                            <Button type="submit" mt={4} bgGradient={`linear(to-br, ${revcolor1}, ${revcolor2})`}  fontSize={["lg",, "2xl"]} color="blackWhite.white" _hover={{"bg":revcolor1}}>Trimite<Icon as={EmailIcon} ml={2}/></Button>
-                            : <Button type="submit" mt={4} bgGradient={`linear(to-br, ${revcolor1}, ${revcolor2})`}  fontSize={["lg",, "2xl"]} color="blackWhite.white" _hover={{"bg":revcolor1}}>Trimis<Icon as={CheckIcon} ml={2}/></Button>
+                            <Button type="submit" mt={4} bgGradient={`linear(to-br, ${revcolor1}, ${revcolor2})`}  fontSize={["lg",, "2xl"]} color={colormode} _hover={{"bg":revcolor1}}>Trimite<Icon as={EmailIcon} ml={2}/></Button>
+                            : <Button type="submit" mt={4} bgGradient={`linear(to-br, ${revcolor1}, ${revcolor2})`}  fontSize={["lg",, "2xl"]} color={colormode} _hover={{"bg":revcolor1}}>Trimis<Icon as={CheckIcon} ml={2}/></Button>
                     }
                 </Box>
             </form>
+            <Box pt={8} pl={24} fontSize={["lg",, "2xl"]} color={colormode}>
+                { send===true ? <Text>Mesajul tau a fost primit! In scurt timp vei primi un mail de confirmare</Text> : <Text /> }
+            </Box>
         </Nav>
     )
 }

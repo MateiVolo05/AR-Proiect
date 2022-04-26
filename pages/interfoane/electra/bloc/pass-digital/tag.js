@@ -1,10 +1,12 @@
-import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
+import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon, useColorMode } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
 import Nav from "../../../../../components/Navbar";
 import Image from 'next/image'
 import tag from "../../../../../public/tag.png"
+import tagBg from "../../../../../public/tag-bg.png"
 
 export default function Tag(){
+    const { colorMode, toggleColorMode } = useColorMode()
     const color1=useColorModeValue("blue.1", "orange.1")
     const color2=useColorModeValue("blue.2", "orange.2")
     const colormode=useColorModeValue("blackWhite.black", "blackWhite.white")
@@ -14,7 +16,13 @@ export default function Tag(){
     return (
         <Nav title="Tag RFID">
             <Center><Heading fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Tag RFID Programabil, Albastru</Heading></Center>
-            <Center pt={24} pl={8} pr={8}><Image src={tag} alt="Tag RFID" width="500vh" height="600vh" /></Center>
+            <Center pt={24} pl={8} pr={8}>
+                {
+                    colorMode==="light"? 
+                        <Image src={tag} alt="Tag RFID" width="500vh" height="600vh" /> :
+                        <Image src={tagBg} alt="Tag RFID" width="500vh" height="600vh" />
+                }
+            </Center>
             <Box pl={4} pt={8} color={colormode}>
                 <Heading fontSize={["lg",, "3xl"]}>Solutie RFID personalizata ELECTRA</Heading>
                 <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
