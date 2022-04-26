@@ -23,6 +23,9 @@ export default function PassDitial(){
             <Center><Heading fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Touch Line</Heading></Center>
             <Grid templateColumns={["repeat(1, auto)",, "repeat(4, 1fr)"]} pt={16} ml={-8}>
                 <GridItem pb={8}>
+                    <ProductCard image={panou} text="Smart Panou Video- Blocuri" link="/interfoane/electra/bloc/touch-line/panou" />
+                </GridItem>
+                <GridItem pb={8}>
                     <ProductCard image={extra} text="Extra Terminal Video 7”" link="/interfoane/electra/bloc/touch-line/extra" />
                 </GridItem>
                 <GridItem pb={8}>
@@ -33,9 +36,6 @@ export default function PassDitial(){
                 </GridItem>
                 <GridItem pb={8}>
                     <ProductCard image={smart} text="Smart+ Terminal Audio" link="/interfoane/electra/bloc/touch-line/smart-audio" />
-                </GridItem>
-                <GridItem pb={8}>
-                    <ProductCard image={panou} text="Smart Panou Video- Blocuri" link="/interfoane/electra/bloc/touch-line/panou" />
                 </GridItem>
                 <GridItem pb={8}>
                     <ProductCard image={tag} text="Tag RFID Programabil, Albastru" link="/interfoane/electra/bloc/touch-line/tag" />
