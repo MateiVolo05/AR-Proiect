@@ -4,8 +4,8 @@ import Image from "next/image";
 import Nav from "../../../../../components/Navbar"
 import ProductCard from "../../../../../components/ProductCard";
 import extra from "../../../../../public/extra.png"
-import smart7 from ".././../../../../public/smart+7.png"
-import smart3 from "../../../../../public/smart+.png"
+import smart7 from ".././../../../../public/smart7.png"
+import smart3 from "../../../../../public/smart3.png"
 import smart from "../../../../../public/smart.png"
 import panou from "../../../../../public/smart-panou.png"
 import tag from "../../../../../public/tag.png"
