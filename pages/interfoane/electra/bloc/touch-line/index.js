@@ -21,26 +21,26 @@ export default function PassDitial(){
     return(
         <Nav title="Electra Gama Touch Line">
             <Center><Heading fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Touch Line</Heading></Center>
-            <Grid templateColumns={["repeat(1, auto)",, "repeat(4, 1fr)"]} pt={16} ml={-8}>
-                <GridItem pb={8}>
+            <Grid templateColumns={["repeat(1, auto)",,"repeat(2, 1fr)" ,, "repeat(4, 1fr)"]} pt={16} gap={4}>
+                <GridItem>
                     <ProductCard image={panou} text="Smart Panou Video- Blocuri" link="/interfoane/electra/bloc/touch-line/panou" />
                 </GridItem>
-                <GridItem pb={8}>
+                <GridItem>
                     <ProductCard image={extra} text="Extra Terminal Video 7”" link="/interfoane/electra/bloc/touch-line/extra" />
                 </GridItem>
-                <GridItem pb={8}>
+                <GridItem>
                     <ProductCard image={smart7} text="Smart+ Terminal Video 7”" link="/interfoane/electra/bloc/touch-line/smart+7" />
                 </GridItem>
-                <GridItem pb={8}>
+                <GridItem>
                     <ProductCard image={smart3} text="Smart+ Terminal Video 3.5”" link="/interfoane/electra/bloc/touch-line/smart+" />
                 </GridItem>
-                <GridItem pb={8}>
+                <GridItem>
                     <ProductCard image={smart} text="Smart+ Terminal Audio" link="/interfoane/electra/bloc/touch-line/smart-audio" />
                 </GridItem>
-                <GridItem pb={8}>
+                <GridItem>
                     <ProductCard image={tag} text="Tag RFID Programabil, Albastru" link="/interfoane/electra/bloc/touch-line/tag" />
                 </GridItem>
-                <GridItem pb={8}>
+                <GridItem>
                     <ProductCard image={yala} text="Yala Electromagnetica, Montaj Aparent, Negru" link="/interfoane/electra/bloc/touch-line/yala" />
                 </GridItem>
             </Grid>

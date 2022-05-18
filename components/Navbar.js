@@ -135,7 +135,7 @@ function Navbar(){
                     <DrawerFooter>
                         <Stack direction={["column",, "row"]}>
                             <Text fontSize="xl" color={revColorMode}>Parteneri</Text>
-                            <VStack>
+                            <VStack gap={4}>
                                 {colorMode==='light' ? <Image src={electra} alt="Electra logo" width="130%" height="30%" /> : <Image src={electraDark} alt="Electra logo" width="130%" height="30%"/>}
                                 <Image src={hikvision} alt="Hikvision logo" width="130%" height="30%"/>
                             </VStack>
