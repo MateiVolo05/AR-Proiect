@@ -10,7 +10,7 @@ function Error(){
     return(
         <Nav title="Page not found">
             <Center pt={40}>
-                <Heading fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Pagina este inexistenta!</Heading>
+                <Heading textAlign="center" fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Pagina este inexistenta!</Heading>
             </Center> 
             <Center pt={8}>
                 <Button fontSize={["md",, "4xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} color={colormode} p={8} _hover={{"bg":revcolor1}}>

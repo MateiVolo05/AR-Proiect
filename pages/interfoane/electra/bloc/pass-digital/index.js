@@ -18,7 +18,7 @@ export default function PassDitial(){
     const grey=useColorModeValue("grey.light", "grey.dark")
     return(
         <Nav title="Electra Gama Pass Digital">
-            <Center><Heading fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Pass Digital</Heading></Center>
+            <Center><Heading textAlign="center" fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Pass Digital</Heading></Center>
             <Grid templateColumns={["repeat(1, auto)",,"repeat(2, 1fr)" ,, "repeat(4, 1fr)"]} pt={16} ml={-8}>
                 <GridItem pb={8}>
                     <ProductCard image={panou} text="Panou Audio Pass Digital - Blocuri, Montaj Aparent, Inox" link="/interfoane/electra/bloc/pass-digital/panou" />

@@ -15,14 +15,32 @@ export default function Yala(){
     const grey=useColorModeValue("grey.light", "grey.dark")
     return (
         <Nav title="Yala Electromagnetica">
-            <Center><Heading fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Yala Electromagnetica De Curent Continuu, 12VC.C./0,7AC.C., Carcasa Poliamida Cu Fibra De Sticla, Montaj Aparent, Negru</Heading></Center>
-            <Center pt={24} pl={8} pr={8}>
-                {
-                    colorMode==="light"? 
-                        <Image src={yala} alt="Yala" width="500vh" height="600vh" /> :
-                        <Image src={yalaBg} alt="Yala" width="500vh" height="600vh" />
-                }
-            </Center>
+            <Box className="product">
+                <Center><Heading fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text" textAlign="center">Yala Electromagnetica De Curent Continuu, Negru</Heading></Center>
+                <Center pt={24} pl={8} pr={8}>
+                    {
+                        colorMode==="light"? 
+                            <Image src={yala} alt="Yala" width="500vh" height="600vh" /> :
+                            <Image src={yalaBg} alt="Yala" width="500vh" height="600vh" />
+                    }
+                </Center>
+                <Box pl={4} pt={8} color={colormode}>
+                    <Heading fontSize={["lg",, "3xl"]}>Caracteristici</Heading>
+                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
+                        <List>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />12VC.C./0,7AC.C.
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Carcasa Poliamida Cu Fibra De Sticla
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Montaj Aparent
+                            </ListItem>
+                        </List>
+                    </Box>
+                </Box>
+            </Box>
         </Nav>
     )
 }

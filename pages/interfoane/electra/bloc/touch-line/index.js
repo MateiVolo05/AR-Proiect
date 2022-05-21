@@ -20,7 +20,7 @@ export default function PassDitial(){
     const grey=useColorModeValue("grey.light", "grey.dark")
     return(
         <Nav title="Electra Gama Touch Line">
-            <Center><Heading fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Touch Line</Heading></Center>
+            <Center><Heading textAlign="center" fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Touch Line</Heading></Center>
             <Grid templateColumns={["repeat(1, auto)",,"repeat(2, 1fr)" ,, "repeat(4, 1fr)"]} pt={16} gap={4}>
                 <GridItem>
                     <ProductCard image={panou} text="Smart Panou Video- Blocuri" link="/interfoane/electra/bloc/touch-line/panou" />

@@ -15,37 +15,39 @@ export default function Tag(){
     const grey=useColorModeValue("grey.light", "grey.dark")
     return (
         <Nav title="Tag RFID">
-            <Center><Heading fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Tag RFID Programabil, Albastru</Heading></Center>
-            <Center pt={24} pl={8} pr={8}>
-                {
-                    colorMode==="light"? 
-                        <Image src={tag} alt="Tag RFID" width="500vh" height="600vh" /> :
-                        <Image src={tagBg} alt="Tag RFID" width="500vh" height="600vh" />
-                }
-            </Center>
-            <Box pl={4} pt={8} color={colormode}>
-                <Heading fontSize={["lg",, "3xl"]}>Solutie RFID personalizata ELECTRA</Heading>
-                <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                    <Text>ELECTRA si-a dezvoltat propria solutie RFID, pentru a oferi utilizatorilor cat mai multa siguranta. Cititoarele RFID integrate in panourile exterioare ELECTRA functioneaza numai cu tag-urile/ card-urile ELECTRA.</Text>
+            <Box className="product">
+                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Tag RFID Programabil, Albastru</Heading></Center>
+                <Center pt={24} pl={8} pr={8}>
+                    {
+                        colorMode==="light"? 
+                            <Image src={tag} alt="Tag RFID" width="500vh" height="600vh" /> :
+                            <Image src={tagBg} alt="Tag RFID" width="500vh" height="600vh" />
+                    }
+                </Center>
+                <Box pl={4} pt={8} color={colormode}>
+                    <Heading fontSize={["lg",, "3xl"]}>Solutie RFID personalizata ELECTRA</Heading>
+                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
+                        <Text>ELECTRA si-a dezvoltat propria solutie RFID, pentru a oferi utilizatorilor cat mai multa siguranta. Cititoarele RFID integrate in panourile exterioare ELECTRA functioneaza numai cu tag-urile/ card-urile ELECTRA.</Text>
+                    </Box>
                 </Box>
-            </Box>
-            <Box pl={4} pt={8} color={colormode}>
-                <Heading fontSize={["lg",, "3xl"]}>Caracteristici Tehnice</Heading>
-                <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
-                    <List>
-                        <ListItem pb={2}>
-                            <ListIcon as={ArrowForwardIcon} color={color1} />Dimensiune: 32 x 62 x 7 mm
-                        </ListItem>
-                        <ListItem pb={2}>
-                            <ListIcon as={ArrowForwardIcon} color={color1} />Greutate: 0.007 kg
-                        </ListItem>
-                        <ListItem pb={2}>
-                            <ListIcon as={ArrowForwardIcon} color={color1} />Distanta de citire: 30 mm
-                        </ListItem>
-                        <ListItem pb={2}>
-                            <ListIcon as={ArrowForwardIcon} color={color1} />Gama temperaturilor de functionare: -30 ... +60°C
-                        </ListItem>
-                    </List>
+                <Box pl={4} pt={8} color={colormode}>
+                    <Heading fontSize={["lg",, "3xl"]}>Caracteristici Tehnice</Heading>
+                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
+                        <List>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Dimensiune: 32 x 62 x 7 mm
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Greutate: 0.007 kg
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Distanta de citire: 30 mm
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Gama temperaturilor de functionare: -30 ... +60°C
+                            </ListItem>
+                        </List>
+                    </Box>
                 </Box>
             </Box>
         </Nav>

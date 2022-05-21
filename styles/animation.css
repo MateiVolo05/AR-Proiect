@@ -1,4 +1,4 @@
-@keyframes slideInFromLeft {
+@keyframes slideInFromDown {
     0% {
       transform: translatey(100%);
       opacity: 0;
@@ -12,6 +12,21 @@
     }
   }
 
+@keyframes appearProduct {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .card{
-    animation: 1s ease-in-out 0s 1 slideInFromLeft;
+    animation: 1s ease-in-out 0s 1 slideInFromDown;
+}
+.product{
+  animation: 2s ease-in-out 0s 1 appearProduct;
 }
