@@ -19,7 +19,7 @@ export default function Interfoane(){
             <Box className="product">
                 <Center><Heading fontSize={["5xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Interfoane</Heading></Center>
                 <Stack direction={["column",, 'row']} justifyContent={["center",, "space-between"]} pt={16} pr={[4,, 0]}>
-                    <Box color={colormode} borderRightStyle="solid" borderTopStyle="solid" borderBottomStyle={["solid",,"none"]}  borderLeftStyle={["solid",,"none"]}  borderColor={color1} borderWidth={[2,,3]} pr="15vh" pb={4} borderRadius={["15px",, "0 15px 0 0"]} ml={[,, -4]} w={["100%",,"50%"]} h={[,,"69vh"]}>
+                    <Box color={colormode} borderRightStyle="solid" borderTopStyle="solid" borderBottomStyle={["solid",,"none"]}  borderLeftStyle={["solid",,"none"]}  borderColor={color1} borderWidth={[2,,3]} pr="15vh" pb={4} borderRadius={["15px",, "0 15px 0 0"]} ml={[,, -4]} w={["100%",,"50%"]} h={[,,"75vh"]}>
                         <Center pt={4} pl={8}>{colorMode==='light' ? <Image src={electraDark} alt="Electra logo" width="200vh" height="50vh" /> : <Image src={electra} alt="Electra logo" width="200vh" height="50vh"/>}</Center>
                         <Text pl={4} pt={4} fontSize={['md',, '3xl']}>Bloc</Text>
                         <List pl={8} fontSize={['sm',, '2xl']}>

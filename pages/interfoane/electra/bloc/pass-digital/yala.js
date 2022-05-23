@@ -32,10 +32,10 @@ export default function Yala(){
                                 <ListIcon as={ArrowForwardIcon} color={color1} />12VC.C./0,7AC.C.
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Carcasa Poliamida Cu Fibra De Sticla
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Carcasa poliamida cu fibra de sticla
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Montaj Aparent
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Montaj aparent
                             </ListItem>
                         </List>
                     </Box>
