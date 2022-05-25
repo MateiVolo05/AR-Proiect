@@ -149,7 +149,7 @@ function Navbar(){
 
 export default function Nav({title, children}){
     return(
-        <Box minH="50px">
+        <Box minH="50px" lang='ro'>
             <Head>
                 {title && <title>{title}</title>}
                 <meta charSet="UTF-8" />

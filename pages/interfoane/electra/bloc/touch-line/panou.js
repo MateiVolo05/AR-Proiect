@@ -95,14 +95,25 @@ export default function Panou(){
                         <Text>Prin integrarea sticlei securizate chimic si a tastaturii Touch in designul panoului s-a obtinut un aspect premium si s-au rezolvat foarte eficient toate provocarile cu care se confrunta un produs montat in exterior: adaptabilitate la arhitectura oricarei cladiri, protectie completa la apa si praf, rezistenta la zgarieturi si lovituri, utilizare prietenoasa si intretinere usoara.</Text>
                     </Box>
                 </Box>
-                <Box pl={4} pt={8} color={colormode}>
-                    <Heading fontSize={["lg",, "3xl"]}>Asamblare inteligenta | Montaj facil pe suprafata | Protectie antifurt</Heading>
-                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                        <Text>Solutia ELECTRA de asamblare a panoului video smart este foarte eficienta, avand ca efect atat aspectul suplu al produsului, cat si usurinta de instalare si etanseitatea.</Text>
-                        <Text>Prin imbinarea perfect stratificata a elementelor constructive, respectiv carcasa din aluminiu vopsita in camp electrostatic si sticla de 4 mm intarita chimic, dublata pe verso de placa electronica de aceeasi dimensiune, rezulta un produs compact, de 33 mm grosime, ce se monteaza foarte facil pe orice suprafata.</Text>
-                        <Text>Senzorul antifurt este pozitionat in zona surubului de fixare, iar alarma se declanseaza imediat ce acesta este desurubat.</Text>
+                {
+                    mode==='aparent' ?
+                        <Box pl={4} pt={8} color={colormode}>
+                            <Heading fontSize={["lg",, "3xl"]}>Asamblare inteligenta | Montaj facil pe suprafata | Protectie antifurt</Heading>
+                            <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
+                                <Text>Solutia ELECTRA de asamblare a panoului video smart este foarte eficienta, avand ca efect atat aspectul suplu al produsului, cat si usurinta de instalare si etanseitatea.</Text>
+                                <Text>Prin imbinarea perfect stratificata a elementelor constructive, respectiv carcasa din aluminiu vopsita in camp electrostatic si sticla de 4 mm intarita chimic, dublata pe verso de placa electronica de aceeasi dimensiune, rezulta un produs compact, de 33 mm grosime, ce se monteaza foarte facil pe orice suprafata.</Text>
+                                <Text>Senzorul antifurt este pozitionat in zona surubului de fixare, iar alarma se declanseaza imediat ce acesta este desurubat.</Text>
+                            </Box>
+                        </Box>
+                        : <Box pl={4} pt={8} color={colormode}>
+                        <Heading fontSize={["lg",, "3xl"]}>Asamblare inteligenta | Montaj incastrat | Protectie antifurt</Heading>
+                        <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
+                            <Text>Solutia ELECTRA de asamblare a panoului video smart este foarte eficienta, avand ca efect atat aspectul suplu al produsului, cat si usurinta de instalare si etanseitatea.</Text>
+                            <Text>Prin imbinarea perfect stratificata a elementelor constructive, respectiv carcasa din aluminiu vopsita in camp electrostatic si sticla de 4 mm intarita chimic, dublata pe verso de placa electronica de aceeasi dimensiune, rezulta un produs compact, usor de instalat. Prin montajul incastrat, panoul are doar 3 mm grosime in exterior, devenind un element de arhitectura in sine, o prezenta notabila si in acelasi timp neintruziva.</Text>
+                            <Text>Senzorul antifurt este pozitionat in zona surubului de fixare, iar alarma se declanseaza imediat ce acesta este desurubat.</Text>
+                        </Box>
                     </Box>
-                </Box>
+                }
                 <Box pl={4} pt={8} color={colormode}>
                     <Heading fontSize={["lg",, "3xl"]}>Camera video orientabila | LED-uri infrarosu | Functionare la -30°C</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>

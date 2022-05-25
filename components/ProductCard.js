@@ -31,7 +31,7 @@ export default function ProductCard(prop){
                     </Box>
                 </Link>
             </VStack>
-            <Box display={['none',, 'block']} zIndex="-1" position="absolute" mt={-470} ml={170} filter="blur(5px)">
+            <Box display={['none',, 'block']} zIndex="-1" position="absolute" mt={-470} ml={145} filter="blur(5px)">
                 {
                     state===1 ? 
                         <VStack>
