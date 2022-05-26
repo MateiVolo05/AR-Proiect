@@ -27,7 +27,7 @@ export default function Panou(){
     return (
         <Nav title='Extra Terminal Video 7"'>
             <Box className="product">
-                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Extra Terminal Video 7"</Heading></Center>
+                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Extra Terminal Video 7{'"'}</Heading></Center>
                 <HStack pt={24} pl={8} pr={8} justifyContent="center">
                     <Box>
                         {
