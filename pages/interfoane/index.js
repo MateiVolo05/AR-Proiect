@@ -2,7 +2,7 @@ import { Center, Box, Heading, useColorMode, useColorModeValue, Stack, Text, Lis
 import {ArrowForwardIcon} from "@chakra-ui/icons"
 import Link from "next/link"
 import Image from "next/image";
-import Nav from "../../components/Navbar"
+import Layout from "../../components/Layout"
 import electra from "../../public/electra.png"
 import electraDark from "../../public/electra-dark.png"
 import hikvision from "../../public/hikvision.png"
@@ -15,7 +15,7 @@ export default function Interfoane(){
     const colormode=useColorModeValue("blackWhite.black", "blackWhite.white")
     const revcolor1=useColorModeValue("orange.1", "blue.1")
     return(
-        <Nav title="Interfoane">
+        <Layout title="Interfoane">
             <Box className="product">
                 <Center><Heading fontSize={["5xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Interfoane</Heading></Center>
                 <Stack direction={["column",, 'row']} justifyContent={["center",, "space-between"]} pt={16} pr={[4,, 0]}>
@@ -62,6 +62,6 @@ export default function Interfoane(){
                     </Box>
                 </Stack>
             </Box>
-        </Nav>
+        </Layout>
     )
 }

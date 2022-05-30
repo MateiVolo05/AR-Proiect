@@ -1,7 +1,7 @@
 import { Box, Button, Input, Textarea, useColorModeValue, FormControl, FormLabel, Icon, Text } from "@chakra-ui/react";
 import emailjs  from "emailjs-com";
 import React, { useState } from 'react';
-import Nav from '../components/Navbar'
+import Layout from '../components/Layout'
 import {EmailIcon, CheckIcon} from "@chakra-ui/icons"
 
 export default function Contact(){
@@ -22,7 +22,7 @@ export default function Contact(){
     const revcolor1=useColorModeValue("orange.1", "blue.1")
     const revcolor2=useColorModeValue("orange.2", "blue.2")
     return (
-        <Nav title="Contact">
+        <Layout title="Contact">
             <form onSubmit={sendEmail}>
                 <Box w={["100%",, "55%"]} pl={[4,, 24]} pt={8} pr={4}>
                     <FormControl isRequired>
@@ -51,6 +51,6 @@ export default function Contact(){
             <Box pt={8} pl={24} fontSize={["lg",, "2xl"]} color={colormode}>
                 { send===true ? <Text>Mesajul tau a fost primit! In scurt timp vei primi un mail de confirmare</Text> : <Text /> }
             </Box>
-        </Nav>
+        </Layout>
     )
 }

@@ -1,9 +1,9 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon, useColorMode } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Nav from "../../../../../components/Navbar";
 import Image from 'next/image'
 import tag from "../../../../../public/tag.png"
 import tagBg from "../../../../../public/tag-bg.png"
+import Layout from "../../../../../components/Layout";
 
 export default function Tag(){
     const { colorMode, toggleColorMode } = useColorMode()
@@ -14,7 +14,7 @@ export default function Tag(){
     const bg=useColorModeValue("blue.3", "orange.3")
     const grey=useColorModeValue("grey.light", "grey.dark")
     return (
-        <Nav title="Tag RFID">
+        <Layout title="Tag RFID">
             <Box className="product">
                 <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Tag RFID Programabil, Albastru</Heading></Center>
                 <Center pt={24} pl={8} pr={8}>
@@ -50,6 +50,6 @@ export default function Tag(){
                     </Box>
                 </Box>
             </Box>
-        </Nav>
+        </Layout>
     )
 }

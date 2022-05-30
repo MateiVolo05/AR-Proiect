@@ -1,6 +1,6 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon, useColorMode } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Nav from "../../../../../components/Navbar";
+import Layout from "../../../../../components/Layout";
 import Image from 'next/image'
 import yala from "../../../../../public/yala.png"
 import yalaBg from "../../../../../public/yala-bg.png"
@@ -14,7 +14,7 @@ export default function Yala(){
     const bg=useColorModeValue("blue.3", "orange.3")
     const grey=useColorModeValue("grey.light", "grey.dark")
     return (
-        <Nav title="Yala Electromagnetica">
+        <Layout title="Yala Electromagnetica">
             <Box className="product">
                 <Center><Heading fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text" textAlign="center">Yala Electromagnetica De Curent Continuu, Negru</Heading></Center>
                 <Center pt={24} pl={8} pr={8}>
@@ -41,6 +41,6 @@ export default function Yala(){
                     </Box>
                 </Box>
             </Box>
-        </Nav>
+        </Layout>
     )
 }

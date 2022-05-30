@@ -1,12 +1,12 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon, useColorMode, HStack, Button, VStack, Stack } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Layout from "../../../../../components/Layout";
 import Image from 'next/image'
-import extra from "../../../../../public/extra.png"
-import extraBg from "../../../../../public/extra-bg.png"
-import extraAlb from "../../../../../public/extra-alb.png"
-import extraAlbBg from "../../../../../public/extra-alb-bg.png"
+import smart3 from "../../../../../public/smart3.png"
+import smart3Bg from "../../../../../public/smart3-bg.png"
+import smart3Alb from "../../../../../public/smart3Alb.png"
+import smart3AlbBg from "../../../../../public/smart3Alb-bg.png"
 import { useState } from "react";
+import Layout from "../../../../../components/Layout";
 
 export default function Panou(){
     const { colorMode, toggleColorMode } = useColorMode()
@@ -25,26 +25,26 @@ export default function Panou(){
         setColor('black')
     }
     return (
-        <Layout title='Extra Terminal Video 7"'>
+        <Layout title='SMART+ TERMINAL VIDEO 3.5"'>
             <Box className="product">
-                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Extra Terminal Video 7{'"'}</Heading></Center>
+                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">SMART+ TERMINAL VIDEO 3.5{'"'}</Heading></Center>
                 <HStack pt={24} pl={8} pr={8} justifyContent="center">
                     <Box>
                         {
                             colorMode==='light' && color==='black' ?
-                                <Image src={extra} alt='Extra Terminal Video 7"' width="500vh" height="600vh" /> : ''
+                                <Image src={smart3} alt='SMART+ TERMINAL VIDEO 3.5"' width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='dark' && color==='black' ?
-                                <Image src={extraBg} alt='Extra Terminal Video 7"' width="500vh" height="600vh" /> : ''
+                                <Image src={smart3Bg} alt='SMART+ TERMINAL VIDEO 3.5"' width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='light' && color==='white' ?
-                                <Image src={extraAlbBg} alt='Extra Terminal Video 7"' width="500vh" height="600vh" /> : ''
+                                <Image src={smart3AlbBg} alt='SMART+ TERMINAL VIDEO 3.5"' width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='dark' && color==='white'?
-                                <Image src={extraAlb} alt='Extra Terminal Video 7"' width="500vh" height="600vh" /> : ''
+                                <Image src={smart3Alb} alt='SMART+ TERMINAL VIDEO 3.5"' width="500vh" height="600vh" /> : ''
                         }
                     </Box>
                     <Box alignSelf="flex-end" pb={[2,, 4]} pl={[0,, 4]}>
@@ -57,29 +57,23 @@ export default function Panou(){
                 <Box pl={4} pt={8} color={colormode}>
                     <Heading fontSize={["lg",, "3xl"]}>Design GLASS & TOUCH</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                        <Text>STICLA securizata este materialul esential utilizat in realizarea produselor din gama Touch Line, ceea ce induce o eleganta minimalista si atemporala.Pe langa estetica minimalista, sticla securizata printr-un proces chimic de intarire transfera asupra produselor si alte caracteristici fundamentale: rezistenta la zgarieturi si lovituri, etanseitate, pastrarea in timp a aspectului lucios si intretinerea usoara.</Text>
+                        <Text>STICLA securizata este materialul esential utilizat in realizarea produselor din gama Touch Line, ceea ce induce o eleganta minimalista si atemporala.</Text>
+                        <Text>Pe langa estetica minimalista, sticla securizata printr-un proces chimic de intarire transfera asupra produselor si alte caracteristici fundamentale: rezistenta la zgarieturi si lovituri, etanseitate, pastrarea in timp a aspectului lucios si intretinerea usoara.</Text>
                         <Text>Utilizarea tastelor TOUCH iluminate se inscrie in tendintele actuale in design si tehnologie, vizand usurinta de utilizare printr-un limbaj vizual universal valabil, cu marcaje grafice intuitive.</Text>
-                        <Text>Prin aspectul compact si esentializat, terminalul video de 7” extra este o prezenta cu stil, ce se integreaza natural in orice ambianta interioara.</Text>
+                        <Text>Prin aspectul compact si esentializat, terminalul video de 3.5” smart+ este o prezenta cu stil, ce se integreaza natural in orice ambianta interioara.</Text>
                     </Box>
                 </Box>
                 <Box pl={4} pt={8} color={colormode}>
                     <Heading fontSize={["lg",, "3xl"]}>Asamblare inteligenta | Instalare usoara</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                        <Text>Solutia ELECTRA de asamblare a terminalului video de 7” extra este originala si eficienta, avand ca efect atat aspectul suplu al produsului, cat si protectia la praf si usurinta de instalare.</Text>
-                        <Text>Prin imbinarea perfect stratificata a elementelor constructive, respectiv carcasa rezistenta din ABS si sticla de 3 mm securizata chimic, dublata pe verso de placa electronica de aceeasi dimensiune, rezulta un produs compact, de doar 20 mm grosime, ce se monteaza foarte facil pe orice suprafata.</Text>
+                        <Text>Solutia ELECTRA de asamblare a terminalului video de 3.5” smart+ este originala si eficienta, avand ca efect atat aspectul suplu al produsului, cat si protectia la praf si usurinta de instalare.</Text>
+                        <Text>Prin imbinarea perfect stratificata a elementelor constructive, respectiv carcasa rezistenta din ABS si sticla de 3 mm securizata chimic, dublata pe verso de placa electronica de aceeasi dimensiune, rezulta un produs compact, de doar 22 mm grosime, ce se monteaza foarte facil pe orice suprafata.</Text>
                     </Box>
                 </Box>
                 <Box pl={4} pt={8} color={colormode}>
-                    <Heading fontSize={["lg",, "3xl"]}>Display LCD color de 7”</Heading>
+                    <Heading fontSize={["lg",, "3xl"]}>Display LCD color de 3.5”</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                        <Text>Adevarul simplu este ca o imagine spune mai mult decat o mie de cuvinte. Terminalul video de 7” extra reda imagini de inalta definitie pe tot parcusul apelului, convorbirii si monitorizarii.</Text>
-                        <Text>Vederea noctura este excelenta, la 20 m distanta, chiar si in situatiile in care nu exista deloc iluminat public.</Text>
-                    </Box>
-                </Box>
-                <Box pl={4} pt={8} color={colormode}>
-                    <Heading fontSize={["lg",, "3xl"]}>Display LCD color de 7”</Heading>
-                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                        <Text>Adevarul simplu este ca o imagine spune mai mult decat o mie de cuvinte. Terminalul video de 7” extra reda imagini de inalta definitie pe tot parcusul apelului, convorbirii si monitorizarii.</Text>
+                        <Text>Adevarul simplu este ca o imagine spune mai mult decat o mie de cuvinte. Terminalul video de 3.5” smart+ reda imagini de inalta definitie pe tot parcusul apelului, convorbirii si monitorizarii.</Text>
                         <Text>Vederea noctura este excelenta, la 20 m distanta, chiar si in situatiile in care nu exista deloc iluminat public.</Text>
                     </Box>
                 </Box>
@@ -93,17 +87,9 @@ export default function Panou(){
                     </Box>
                 </Box>
                 <Box pl={4} pt={8} color={colormode}>
-                    <Heading fontSize={["lg",, "3xl"]}>Fotografiere | Memorie 100 imagini</Heading>
-                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
-                        <Text>Preluarea de imagini are o contributie foarte mare in materie de siguranta si confort. Aceasta functie permite o evidenta completa a tuturor apelurilor, deoarece la fiecare apel de la panoul exterior se face automat o fotografie.</Text>
-                        <Text>De asemenea, locatarul are posibilitatea sa realizeze fotografii suplimentare oricand in timpul apelului, convorbirii sau monitorizarii, prin simpla atingere a tastei.</Text>
-                        <Text>Capacitatea de memorare a terminalului este de 100 de imagini, cand se depaseste aceasta limita, cele mai vechi fotografii sunt sterse automat pentru a face loc celor noi.</Text>
-                    </Box>
-                </Box>
-                <Box pl={4} pt={8} color={colormode}>
                     <Heading fontSize={["lg",, "3xl"]}>Produse aditionale</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
-                        <Text>Terminalul video de 7” extra poate realiza mai multe functii in interiorul locuintei, deoarece ofera posibilitatea conectarii directe a unor dispozitive aditionale:</Text>
+                        <Text>Terminalul video de 3.5” smart+ poate realiza mai multe functii in interiorul locuintei, deoarece ofera posibilitatea conectarii directe a unor dispozitive aditionale:</Text>
                         <br />
                         <List>
                             <ListItem pb={2}>
@@ -119,23 +105,35 @@ export default function Panou(){
                     </Box>
                 </Box>
                 <Box pl={4} pt={8} color={colormode}>
+                    <Heading fontSize={["lg",, "3xl"]}>Compatibilitate extinsa</Heading>
+                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]} textAlign="justify">
+                        <Text>Terminalul video de 3.5” smart+ este compatibil cu toate panourile exterioare, terminalele video si audio si echipamentele auxiliare din gama Touch Line – 4 fire, oferind posibilitatea de a fi utilizat atat in configuratii pentru case, cat si in cele pentru blocuri.</Text>
+                    </Box>
+                </Box>
+                <Box pl={4} pt={8} color={colormode}>
                     <Heading fontSize={["lg",, "3xl"]}> Caracteristici tehnice</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
                         <List>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Dimensiune: 162 x 227 x 20 mm
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Dimensiune: 210 x 96 x 22 mm
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Greutate: 0.8 kg
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Greutate: 0.5 kg
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Display LCD - 7”: 800 x 3(RGB) x 480, ◄/►/▼/▲ - 40/ 60/ 60/ 60
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Display LCD – 3.5”: 320 x RGB x 240, ◄/►/▼/▲ - 60/ 60/ 40/ 60
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Reglaje pentru imaginea video disponibile pe verso: crominanta si luminozitate
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Montaj aparent (pe suprafata)
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Conectori cu surub
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Cabluri recomandate in functie de distanta:
                                 <br />
                                 <List pl={16}>
                                     <ListItem>

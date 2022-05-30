@@ -1,6 +1,6 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon, useColorMode, HStack, Button, VStack, Stack } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Nav from "../../../../../components/Navbar";
+import Layout from "../../../../../components/Layout";
 import Image from 'next/image'
 import panou from "../../../../../public/smart-panou.png"
 import panouDark from "../../../../../public/smart-panou-bg.png"
@@ -36,7 +36,7 @@ export default function Panou(){
         setMode('incastrat')
     }
     return (
-        <Nav title="Smart Panou Video- Blocuri">
+        <Layout title="Smart Panou Video- Blocuri">
             <Box className="product">
                 <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Smart Panou Video- Blocuri</Heading></Center>
                 <HStack pt={24} pl={8} pr={8} justifyContent="center">
@@ -252,7 +252,7 @@ export default function Panou(){
                     </Box>
                 </Box>
             </Box>
-        </Nav>
+        </Layout>
     )
 }
                     

@@ -1,8 +1,8 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Nav from "../../../../../components/Navbar";
 import Image from 'next/image'
 import terminal from "../../../../../public/terminal-pass-digital.png"
+import Layout from "../../../../../components/Layout";
 
 export default function Terminal(){
     const color1=useColorModeValue("blue.1", "orange.1")
@@ -12,7 +12,7 @@ export default function Terminal(){
     const bg=useColorModeValue("blue.3", "orange.3")
     const grey=useColorModeValue("grey.light", "grey.dark")
     return (
-        <Nav title="Terminal Audio Pass Digital">
+        <Layout title="Terminal Audio Pass Digital">
             <Box className="product">
                 <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Terminal Audio Pass Digital, Alb</Heading></Center>
                 <Center pt={24} pl={8} pr={8}><Image src={terminal} alt="Terminal Audio" width="500vh" height="600vh" /></Center>
@@ -68,6 +68,6 @@ export default function Terminal(){
                     </Box>
                 </Box>
             </Box>
-        </Nav>
+        </Layout>
     )
 }

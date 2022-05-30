@@ -1,9 +1,9 @@
-import Nav from '../components/Navbar'
+import Layout from '../components/Layout'
 
 export default function Home(){
     return (
-        <Nav title="A&R Proioect">
+        <Layout title="A&R Proioect">
 
-        </Nav>
+        </Layout>
     )
 }

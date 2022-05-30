@@ -1,10 +1,10 @@
-import Nav from "../../../components/Navbar"
+import Layout from "../../../components/Layout"
 
 
 export default function Hikvision(){
     return(
-        <Nav title="Interfoane Hikvision">
+        <Layout title="Interfoane Hikvision">
 
-        </Nav>
+        </Layout>
     )
 }

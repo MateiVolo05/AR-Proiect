@@ -1,5 +1,5 @@
 import { Button, Center, Heading, useColorModeValue } from "@chakra-ui/react"
-import Nav from "../components/Navbar"
+import Layout from "../components/Layout"
 import Link from "next/link"
 
 function Error(){
@@ -8,7 +8,7 @@ function Error(){
     const colormode=useColorModeValue("blackWhite.white", "blackWhite.black")
     const revcolor1=useColorModeValue("orange.1", "blue.1")
     return(
-        <Nav title="Page not found">
+        <Layout title="Page not found">
             <Center pt={40}>
                 <Heading textAlign="center" fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Pagina este inexistenta!</Heading>
             </Center> 
@@ -17,7 +17,7 @@ function Error(){
                     <Link href="/">Acasa</Link>
                 </Button>
             </Center>
-        </Nav>
+        </Layout>
     )
 }
 

@@ -1,6 +1,6 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Nav from "../../../../../components/Navbar";
+import Layout from "../../../../../components/Layout";
 import Image from 'next/image'
 import panou from "../../../../../public/panou-pass-digital.png"
 
@@ -12,7 +12,7 @@ export default function Panou(){
     const bg=useColorModeValue("blue.3", "orange.3")
     const grey=useColorModeValue("grey.light", "grey.dark")
     return (
-        <Nav title="Panou Audio Pass Digital">
+        <Layout title="Panou Audio Pass Digital">
             <Box className="product">
                 <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Panou Audio Pass Digital - Blocuri, Montaj Aparent, Inox</Heading></Center>
                 <Center pt={24} pl={8} pr={8}><Image src={panou} alt="Panou Audio" width="500vh" height="600vh" /></Center>
@@ -89,6 +89,6 @@ export default function Panou(){
                     </Box>
                 </Box>
             </Box>
-        </Nav>
+        </Layout>
     )
 }

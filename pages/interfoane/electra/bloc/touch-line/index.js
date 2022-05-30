@@ -1,7 +1,7 @@
 import { Center, Box, Heading, useColorMode, useColorModeValue, Stack, Text, ListIcon, ListItem, List, Button, HStack, Grid, GridItem, VStack } from "@chakra-ui/react"
 import Link from "next/link"
 import Image from "next/image";
-import Nav from "../../../../../components/Navbar"
+import Layout from "../../../../../components/Layout"
 import ProductCard from "../../../../../components/ProductCard";
 import extra from "../../../../../public/extra.png"
 import smart7 from ".././../../../../public/smart7.png"
@@ -19,7 +19,7 @@ export default function PassDitial(){
     const bg=useColorModeValue("blue.3", "orange.3")
     const grey=useColorModeValue("grey.light", "grey.dark")
     return(
-        <Nav title="Electra Gama Touch Line">
+        <Layout title="Electra Gama Touch Line">
             <Center><Heading textAlign="center" fontSize={["xl",, "6xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Electra Gama Touch Line</Heading></Center>
             <Grid templateColumns={["repeat(1, auto)",,"repeat(2, 1fr)" ,, "repeat(4, 1fr)"]} pt={16} gap={4} pr={[,, 20]}>
                 <GridItem>
@@ -44,6 +44,6 @@ export default function PassDitial(){
                     <ProductCard image={yala} text="Yala Electromagnetica, Montaj Aparent, Negru" link="/interfoane/electra/bloc/touch-line/yala" />
                 </GridItem>
             </Grid>
-        </Nav>
+        </Layout>
     )
 }

@@ -2,7 +2,7 @@ import { Center, Box, Heading, useColorMode, useColorModeValue, Stack, Text, Lis
 import {ArrowForwardIcon} from "@chakra-ui/icons"
 import Link from "next/link"
 import Image from "next/image";
-import Nav from "../../../components/Navbar"
+import Layout from "../../../components/Layout"
 import electra from "../../../public/electra.png"
 import electraDark from "../../../public/electra-dark.png"
 import SlideShow from "../../../components/SideShow";
@@ -32,7 +32,7 @@ export default function Electra(){
         },
       ];
     return(
-        <Nav title="Interfoane Electra">
+        <Layout title="Interfoane Electra">
             <Box className="product">
                 <Center pl={8}>{colorMode==='light' ? <Image src={electraDark} alt="Electra logo" width="200vh" height="50vh" /> : <Image src={electra} alt="Electra logo" width="200vh" height="50vh"/>}</Center>
                 <Stack direction={["column",, 'row']} pt={16} justifyContent="space-around" color={colormode}>
@@ -75,6 +75,6 @@ export default function Electra(){
                         <SlideShow images={images} width={["100%",,"45%"]} />
                 </Stack>
             </Box>
-        </Nav>
+        </Layout>
     )
 }
