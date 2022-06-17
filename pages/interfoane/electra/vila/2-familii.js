@@ -1,15 +1,15 @@
 import {useColorModeValue, Heading, Center, Box, Text, List, ListItem, ListIcon, useColorMode, HStack, Button, VStack, Stack } from "@chakra-ui/react";
 import {ArrowForwardIcon} from "@chakra-ui/icons"
-import Layout from "../../../../../components/Layout";
+import Layout from "../../../../components/Layout";
 import Image from 'next/image'
-import panou from "../../../../../public/smart-panou.png"
-import panouDark from "../../../../../public/smart-panou-bg.png"
-import panouAlb from "../../../../../public/smart-panou-alb.png"
-import panouAlbBg from "../../../../../public/smart-panou-alb-bg.png"
-import panouAparent from "../../../../../public/smart-panou-aparent.png"
-import panouAparentDark from "../../../../../public/smart-panou-aparent-bg.png"
-import panouAlbAparent from "../../../../../public/smart-panou-aparent-alb.png"
-import panouAlbAparentDark from "../../../../../public/smart-panou-aparent-alb-bg.png"
+import panou from "../../../../public/panou2fam.png"
+import panouDark from "../../../../public/panou2fam-bg.png"
+import panouAlb from "../../../../public/panou2fam-alb.png"
+import panouAlbBg from "../../../../public/panou2fam-alb-bg.png"
+import panouAparent from "../../../../public/panou2fam-aparent.png"
+import panouAparentDark from "../../../../public/panou2fam-aparent-bg.png"
+import panouAlbAparent from "../../../../public/panou2fam-aparent-alb.png"
+import panouAlbAparentDark from "../../../../public/panou2fam-aparent-alb-bg.png"
 import { useState } from "react";
 
 export default function Panou(){
@@ -36,43 +36,43 @@ export default function Panou(){
         setMode('incastrat')
     }
     return (
-        <Layout title="Smart Panou Video- Blocuri">
+        <Layout title="Smart Panou Video - 2 Familii">
             <Box className="product">
-                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Smart Panou Video- Blocuri</Heading></Center>
+                <Center><Heading textAlign="center" fontSize={["xl",, "5xl"]} bgGradient={`linear(to-br, ${color1}, ${color2})`} bgClip="text">Smart Panou Video - 2 Familii</Heading></Center>
                 <HStack pt={24} pl={8} pr={8} justifyContent="center">
                     <Box>
                         {
                             colorMode==='light' && color==='black' && mode==='incastrat'?
-                                <Image src={panou} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panou} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='light' && color==='black' && mode==='aparent'?
-                                <Image src={panouAparent} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouAparent} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='dark' && color==='black' && mode==='incastrat'?
-                                <Image src={panouDark} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouDark} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='dark' && color==='black' && mode==='aparent'?
-                                <Image src={panouAparentDark} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouAparentDark} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
 
                         {
                             colorMode==='light' && color==='white' && mode==='incastrat'?
-                                <Image src={panouAlbBg} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouAlbBg} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='light' && color==='white' && mode==='aparent'?
-                                <Image src={panouAlbAparentDark} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouAlbAparentDark} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='dark' && color==='white' && mode==='incastrat'?
-                                <Image src={panouAlb} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouAlb} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                         {
                             colorMode==='dark' && color==='white' && mode==='aparent'?
-                                <Image src={panouAlbAparent} alt="Panou Smart Video" width="500vh" height="600vh" /> : ''
+                                <Image src={panouAlbAparent} alt="Smart Panou Video" width="500vh" height="600vh" /> : ''
                         }
                     </Box>
                     <Box alignSelf="flex-end" pb={[2,, 4]} pl={[0,, 4]}>
@@ -142,38 +142,22 @@ export default function Panou(){
                     </Box>
                 </Box>
                 <Box pl={4} pt={8} color={colormode}>
-                    <Heading fontSize={["lg",, "3xl"]}>40 de apartamente | Lista locatari electronica</Heading>
+                    <Heading fontSize={["lg",, "3xl"]}>Tasta Touch iluminata cu afisare nume</Heading>
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
-                        <Text>O instalatie cu panou exterior video smart pentru blocuri poate avea pana la 40 de apartamente, iar adresele apartamentelor pot fi programate cu maxim 4 cifre, de la 1 la 9999.</Text>
-                        <Text>Display-ul cu 4 randuri x 16 caractere este solutia perfecta pentru listele de locatari in cazul cladirilor mari si asigura o interfata prietenoasa cu utilizatorii, interactionand cu ei in permanenta.</Text>
+                        <Text>Tastatura Touch capacitiva dezvoltata de ELECTRA este cu adevarat smart, atat din punct de vedere estetic, cat si functional. Tasta de apel are o suprafata generoasa, integrand si afisarea uniform iluminata a numelui. Solutia tehnica implementata asigura functionarea foarte eficienta a tastaturii:</Text>
                         <br />
                         <List>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />In modul stand-by, se afiseaza un mesaj de bun venit si instructiuni de utilizare pentru vizitatori. Optional, se poate afisa alternant si un al doilea ecran, cu adresa imobilului sau mesaje de interes pentru locatari.
-                            </ListItem>
-                            <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Pe parcursul derularii listei locatarilor, apelului, convorbirii si accesului, display-ul continua sa afiseze instructiuni ce indica pasii de utilizare.
-                            </ListItem>
-                            <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Display-ul poate afisa informatiile in diferite limbi: romana, engleza, spaniola, germana, poloneza, ebraica, etc.
-                            </ListItem>
-                        </List>
-                    </Box>
-                </Box>
-                <Box pl={4} pt={8} color={colormode}>
-                    <Heading fontSize={["lg",, "3xl"]}>Tastatura Touch iluminata</Heading>
-                    <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
-                        <Text>Tastatura Touch capacitiva dezvoltata de ELECTRA este cu adevarat smart, atat din punct de vedere estetic, cat si functional. Solutia tehnica implementata asigura functionarea foarte eficienta a tastaturii si iluminarea uniforma pe timp de noapte:</Text>
-                        <br />
-                        <List>
-                            <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Tastatura este interactiva pe tot parcursul utilizarii, prin semnalizari luminoase intuitive.
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Apelul se initiaza prin apasarea in orice punct al chenarului, capacitatea fiind uniform distribuita.
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Nu au loc apeluri false pe timp de ploaie sau umiditate ridicata.
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Tastele nu se blocheaza, indiferent de frecventa utilizarii.
+                            </ListItem>
+                            <ListItem pb={2}>
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Personalizarea cu numele locatarilor se face foarte simplu.
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Senzorul de lumina activeaza iluminarea tastaturii doar pe timpul noptii.
@@ -201,13 +185,10 @@ export default function Panou(){
                     <Box pl={4} pt={4} pr={4} fontSize={["md",, "xl"]}>
                         <List>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Max. 40 de apartamente
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Dimensiune: 260 x 110 x 33 mm
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Dimensiune: 340 x 110 x 33 mm
-                            </ListItem>
-                            <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Greutate: 2 kg
+                                <ListIcon as={ArrowForwardIcon} color={color1} />Greutate: 1.3 kg
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Camera video CMOS, 800 TVL
@@ -216,23 +197,17 @@ export default function Panou(){
                                 <ListIcon as={ArrowForwardIcon} color={color1} />6 LED-uri infrarosu si 1 LED rosu de semnalizare a prezentei monitorizarii video
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Display electronic cu 4 randuri x 16 caractere
-                            </ListItem>
-                            <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Conectori PLUG & PLAY
-                            </ListItem>
-                            <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Mufa micro-USB pentru conexiune cu PC
                             </ListItem>
                             <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Cabluri recomandate in functie de distanta:
                                 <br />
                                 <List pl={16}>
                                     <ListItem pb={2}>
-                                        <ListIcon as={ArrowForwardIcon} color={color1} />4 x 0.5 mm2, pentru o distanta de max. 100 m de la panou pana la ultimul terminal din instalatie
+                                        <ListIcon as={ArrowForwardIcon} color={color1} />4 x 0.75 mm2, pentru o distanta de max. 150 m de la panou pana la ultimul terminal din instalatie
                                     </ListItem>
                                     <ListItem pb={2}>
-                                        <ListIcon as={ArrowForwardIcon} color={color1} />4 x 0.5 mm2, pentru o distanta de max. 100 m de la panou pana la ultimul terminal din instalatie
+                                        <ListIcon as={ArrowForwardIcon} color={color1} />UTP cat 5e (AWG 24) sau UTP cat 6e (AWG 23), pentru o distanta de max. 200 m de la panou pana la ultimul terminal din instalatie
                                     </ListItem>
                                 </List>
                             </ListItem>

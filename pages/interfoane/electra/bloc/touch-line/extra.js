@@ -132,9 +132,6 @@ export default function Panou(){
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Display LCD - 7”: 800 x 3(RGB) x 480, ◄/►/▼/▲ - 40/ 60/ 60/ 60
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Montaj aparent (pe suprafata)
-                            </ListItem>
-                            <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Conectori cu surub
                                 <br />
                                 <List pl={16}>

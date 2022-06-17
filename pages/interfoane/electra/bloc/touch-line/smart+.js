@@ -127,9 +127,6 @@ export default function Panou(){
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Reglaje pentru imaginea video disponibile pe verso: crominanta si luminozitate
                             </ListItem>
                             <ListItem pb={2}>
-                                <ListIcon as={ArrowForwardIcon} color={color1} />Montaj aparent (pe suprafata)
-                            </ListItem>
-                            <ListItem pb={2}>
                                 <ListIcon as={ArrowForwardIcon} color={color1} />Conectori cu surub
                             </ListItem>
                             <ListItem pb={2}>
